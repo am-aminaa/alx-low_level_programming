@@ -1,18 +1,19 @@
 #include "main.h"
 
 /**
- * _strspn - entry point
+ * _strspn - Entry point
  * @s: input
  * @accept: input
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, n, value, check;
 
 	value = 0;
 
-	for (i = 0; s[i] != '\0'; n++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		check = 0;
 
@@ -24,9 +25,11 @@ unsigned int _strspn(char *s, char *accept)
 				check = 1;
 			}
 		}
+
 		if (check == 0)
 			return (value);
 	}
+
 	return (value);
 }
 
