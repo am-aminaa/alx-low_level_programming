@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * pow_recursion - returns the value of x raised to the power of y.
- * If y is lower than 0, the function should return -1
+ * pow_recursion - returns the value of x raised to the power of y
  * @x: the value
  * @y: the time
  * return: the value of y
